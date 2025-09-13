@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo/banner.png" alt="Hyperbolic Communities" width="80%">
+  <img src="assets/logo/banner.png" alt="Hyperbolic Communities" width="100%">
 </p>
 
 <h1 align="center">Hyperbolic Communities</h1>
