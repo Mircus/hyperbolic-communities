@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperbolic-communities"
+authors = [{name = "Hyperbolic Communities Developers", email = "devnull@example.com"}]
+description = "Oscillatory community detection using hyperbolic geometric flows"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["community-detection", "network-analysis", "ricci-flow", "simplicial-complexes"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "scipy>=1.8.0",
+    "networkx>=2.7.0",
+    "scikit-learn>=1.1.0",
+    "matplotlib>=3.5.0",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+gpu = ["cupy>=12.0.0"]
+visualization = ["plotly>=5.0.0", "ipywidgets>=7.6.0"]
+topology = ["gudhi>=3.8.0", "ripser>=0.6.4"]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+    "sphinx>=6.0.0",
+    "sphinx-rtd-theme>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/username/hyperbolic-communities"
+Documentation = "https://hyperbolic-communities.readthedocs.io"
+Repository = "https://github.com/username/hyperbolic-communities.git"
+Issues = "https://github.com/username/hyperbolic-communities/issues"
+
+[tool.setuptools_scm]
+write_to = "hyperbolic_communities/version.py"

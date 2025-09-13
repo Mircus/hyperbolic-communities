@@ -1,0 +1,5 @@
+include README.md LICENSE
+recursive-include hyperbolic_communities *.py
+recursive-include examples *.py *.ipynb *.md *.csv *.json *.gml *.h5
+recursive-include docs *
+recursive-include tests *.py
